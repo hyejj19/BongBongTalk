@@ -5,10 +5,12 @@
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
+@import "components/user-component.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/chats.css";
 
 @font-face {
   font-family: "Cafe24SsurroundAir";
@@ -21,4 +23,8 @@
 body {
   font-family: "Cafe24SsurroundAir";
   height: 1000vh;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
