@@ -6,11 +6,14 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
+@import "components/notification-dot.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/chats.css";
+@import "screens/find.css";
 
 @font-face {
   font-family: "Cafe24SsurroundAir";
@@ -22,7 +25,7 @@
 
 body {
   font-family: "Cafe24SsurroundAir";
-  height: 1000vh;
+  height: 100vh;
 }
 
 .main-screen {

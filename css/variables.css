@@ -2,5 +2,7 @@
   --light-green: rgb(176, 210, 54, 0.3);
   --green: rgb(176, 210, 54, 0.6);
   --deep-green: #0e4525;
+  --deep-green-opacity: #0e452581;
   --horizontal-space: 20px;
+  --main-border: 1px solid var(--light-green);
 }

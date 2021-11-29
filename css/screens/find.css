@@ -1,0 +1,124 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-icons_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.find-icons_icon i {
+  font-size: 35px;
+}
+
+.find-icons_icon span {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  padding: 20px 0px;
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--deep-green-opacity);
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 60px 0px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--deep-green-opacity);
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.open-chat__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--deep-green-opacity);
+}
+
+.open-chat__header span {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--deep-green-opacity);
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-post__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.open-post__hashtags {
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__members-count {
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+.open-post__members .divider {
+  width: 1px;
+  height: 15px;
+  background-color: var(--deep-green-opacity);
+  margin: 0 5px;
+}
+
+.open-post__members-status {
+  color: tomato;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.open-post__photo {
+}
+
+.open-post__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+
+.open-post__count {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  color: white;
+  border-radius: 20%;
+}
