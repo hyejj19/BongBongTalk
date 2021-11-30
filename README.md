@@ -1,3 +1,3 @@
-# KoKoa Clone 2021
+# KaKao Talk Clone 2021
 
-HTML & CSS ars so much fun.
+HTML & CSS Practice.
