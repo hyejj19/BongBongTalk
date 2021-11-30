@@ -1,19 +1,16 @@
 .icon-row {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.icon-row__separation {
-  flex-direction: column;
+  margin-top: 10px;
+  /* justify-content: space-between; */
 }
 
 .icon-row__icon {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-bottom: 25px;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box; /*padding값이 들어가서 정해준 width보다 넘치기 때문에 초기화해줌*/
 }
 
 .icon-row__icon i {
@@ -24,9 +21,4 @@
   margin-top: 20px;
   text-align: center;
   font-size: 15px;
-}
-
-.icon-row__section {
-  display: flex;
-  justify-content: center;
 }

@@ -1,0 +1,11 @@
+.more-suggestions {
+  margin-top: 20px;
+  padding-top: 25px;
+  border-top: var(--main-border);
+}
+
+.more-suggestions__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--deep-green-opacity);
+}
