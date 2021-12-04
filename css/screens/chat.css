@@ -1,0 +1,14 @@
+#chat-screen {
+  background-color: var(--light-green);
+  height: 5000vh;
+}
+
+#chat-screen::-webkit-scrollbar {
+  display: none;
+}
+
+#chat-screen .alt-screen-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+}
