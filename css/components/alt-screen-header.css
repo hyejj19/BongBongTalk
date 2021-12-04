@@ -7,6 +7,7 @@
   font-weight: 700;
 }
 
+/*균등한 widht를 주어 요소들을 분배, 가운데 정렬.*/
 .alt-screen-header__column {
   width: 33%;
 }
