@@ -1,5 +1,6 @@
 :root {
-  --light-green: rgb(176, 210, 54, 0.3);
+  --light-green: rgb(233, 245, 191);
+  --light-green__opacity: rgba(233, 245, 191, 0.671);
   --green: rgb(176, 210, 54, 0.6);
   --deep-green: #0e4525;
   --deep-green-opacity: #0e452581;

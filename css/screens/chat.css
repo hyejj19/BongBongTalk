@@ -1,0 +1,35 @@
+#chat-screen {
+  background-color: var(--light-green);
+  height: 1000vh;
+}
+
+#chat-screen .alt-screen-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  top: 0;
+  background-color: var(--light-green__opacity);
+}
+
+#chat-screen .status-bar {
+  z-index: 2;
+  background-color: var(--light-green__opacity);
+}
+
+.main-chat {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-chat .chat__timestamp {
+  background-color: var(--deep-green);
+  color: whitesmoke;
+  padding: 8px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
