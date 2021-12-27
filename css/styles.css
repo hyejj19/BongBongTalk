@@ -10,6 +10,7 @@
 @import "components/notification-dot.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -28,6 +29,8 @@
   font-style: normal;
 }
 
+
+
 body {
   font-family: "Cafe24SsurroundAir";
   height: 100vh;
@@ -35,4 +38,8 @@ body {
 
 .main-screen {
   padding: 0px var(--horizontal-space);
+}
+
+.hidden {
+  display: none;
 }

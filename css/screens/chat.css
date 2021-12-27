@@ -21,11 +21,23 @@
   background-color: var(--light-green__opacity);
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to{
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.5s linear;
 }
 
 .main-chat .chat__timestamp {
@@ -38,12 +50,37 @@
   border-radius: 20px;
   margin-bottom: 25px;
 }
+@keyframes fadeInPop {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: none;
+    opacity: 1;
+  }
+}
 
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 30px;
 }
+
+.message-row--own{
+  opacity: 0;
+  animation: fadeInPop 1s ease-in-out forwards;
+  animation-delay:1s;
+}
+
+.message-row--oponent{
+  opacity: 0;
+  animation: fadeInPop 1s ease-in-out forwards;
+}
+
 
 .message-row img {
   width: 70px;
@@ -101,17 +138,18 @@
   background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
-  padding: 5px 25px;
+  padding: 7px 30px;
   align-items: center;
   box-sizing: border-box;
+  transition: all .3s ease-in-out;
 }
 
 .reply .reply__column:first-child{
-  width: 10%;
+  padding-right: 10px;
 }
 
 .reply .reply__column:last-child{
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 
@@ -121,7 +159,9 @@
   border: var(--main-border);
   border-radius: 20px;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
+
 
 .reply i {
   opacity: 0.5;
@@ -154,4 +194,25 @@
 .reply__column button:focus,
 .reply__column button:active{
   outline : none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition:opacity 1s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button{
+  display: none;
+}
+
+.reply:focus-within input {
+  width: 100%;
+  transform: translateX(-2%) translateY(-90px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }

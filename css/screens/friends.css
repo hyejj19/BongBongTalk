@@ -27,3 +27,34 @@
   display: flex;
   justify-content: space-between;
 }
+
+#splash-screen {
+  background-color: var(--main-green);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
+
+@keyframes popSplashIcon {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#splash-screen i {
+  opacity: 0;
+  animation: popSplashIcon 0.8s ease-in-out forwards;
+}

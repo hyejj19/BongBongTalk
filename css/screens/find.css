@@ -113,3 +113,24 @@
 .open-post__count span {
   margin-left: 5px;
 }
+
+.open-post__count:hover i{
+  will-change: transform; 
+  /*브라우저에게 변화가 있을거라고 미리 알려줌. 위치 준비? 그래픽카드로 애니메이션 가속화*/
+  animation: heartBeat 1s linear infinite;
+}
+
+@keyframes heartBeat {
+  0%{
+    color: white;
+    transform: none;
+  }
+  50%{
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100%{
+    color: white;
+    transform: none;
+  }
+}
