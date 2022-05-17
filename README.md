@@ -1,3 +1,1 @@
-# KaKao Talk Clone 2021
-
-HTML & CSS Practice.
+HTML & CSS 클론코딩 연습
